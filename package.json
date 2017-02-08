@@ -1,18 +1,23 @@
 {
   "name": "passport-started",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LittleWhiteYA/passport-started.git"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.1"
-  },
-  "devDependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
     "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
     "passport-local": "^1.0.0"
   },
-  "description": ""
+  "devDependencies": {},
+  "description": "passport sample"
 }
