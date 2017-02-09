@@ -10,8 +10,8 @@ app.use(BodyParser.json());
 
 app.use(session({
     secret: 'secret',
-    resave: false,
-    saveUninitialized: true,
+    resave: false, // don't save session if unmodified
+    saveUninitialized: true, // always create session to ensure the origin
 }));
 
 // passport
