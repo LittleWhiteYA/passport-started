@@ -40,8 +40,13 @@ const facebookStrategy = new FacebookStrategy({
         callbackURL: "http://localhost:3000/auth/facebook/callback",
     },
     (accessToken, refreshToken, profile, done) => {
+        console.log('profile: ');
         console.log(profile);
-        return done(null, false);
+        if (! profile) {
+            return done(null, false);
+        } else {
+            return done(null, profile);
+        }
     });
 
 module.exports = {
